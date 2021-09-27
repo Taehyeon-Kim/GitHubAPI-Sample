@@ -12,4 +12,5 @@ target 'GitHubAPI-Sample' do
 
   # Firebase
   pod 'Firebase/Auth'
+  pod 'Firebase/Analytics'
 end

@@ -16,6 +16,7 @@
 		BD596A5D2701E2CA00A86EA2 /* TempModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A5C2701E2CA00A86EA2 /* TempModel.swift */; };
 		BD596A5F2701E2DC00A86EA2 /* TempService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A5E2701E2DC00A86EA2 /* TempService.swift */; };
 		BD596A622701E3C400A86EA2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A612701E3C400A86EA2 /* UIView+Extensions.swift */; };
+		BD596A662701EE9C00A86EA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD596A652701EE9C00A86EA2 /* GoogleService-Info.plist */; };
 		F11CA00291A7381E47E05AC8 /* Pods_GitHubAPI_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533EC38EDDBC5B9FD9E67372 /* Pods_GitHubAPI_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		BD596A5C2701E2CA00A86EA2 /* TempModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempModel.swift; sourceTree = "<group>"; };
 		BD596A5E2701E2DC00A86EA2 /* TempService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempService.swift; sourceTree = "<group>"; };
 		BD596A612701E3C400A86EA2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BD596A652701EE9C00A86EA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F9BDAE5DAD72818AEC81F8EC /* Pods-GitHubAPI-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubAPI-Sample.release.xcconfig"; path = "Target Support Files/Pods-GitHubAPI-Sample/Pods-GitHubAPI-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 		BD596A3E2701DF1800A86EA2 /* GitHubAPI-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				BD596A652701EE9C00A86EA2 /* GoogleService-Info.plist */,
 				BD596A542701E1D100A86EA2 /* App */,
 				BD596A582701E23200A86EA2 /* Models */,
 				BD596A572701E21800A86EA2 /* Services */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD596A4C2701DF1B00A86EA2 /* LaunchScreen.storyboard in Resources */,
+				BD596A662701EE9C00A86EA2 /* GoogleService-Info.plist in Resources */,
 				BD596A492701DF1B00A86EA2 /* Assets.xcassets in Resources */,
 				BD596A472701DF1800A86EA2 /* Main.storyboard in Resources */,
 			);
