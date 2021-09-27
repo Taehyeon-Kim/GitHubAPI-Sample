@@ -9,4 +9,7 @@ target 'GitHubAPI-Sample' do
   pod 'Moya'
   pod 'SnapKit', '~> 5.0.0'
   pod 'Then'
+
+  # Firebase
+  pod 'Firebase/Auth'
 end
