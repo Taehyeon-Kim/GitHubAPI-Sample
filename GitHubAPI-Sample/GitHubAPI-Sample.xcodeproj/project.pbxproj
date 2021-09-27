@@ -13,6 +13,9 @@
 		BD596A472701DF1800A86EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD596A452701DF1800A86EA2 /* Main.storyboard */; };
 		BD596A492701DF1B00A86EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD596A482701DF1B00A86EA2 /* Assets.xcassets */; };
 		BD596A4C2701DF1B00A86EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD596A4A2701DF1B00A86EA2 /* LaunchScreen.storyboard */; };
+		BD596A5D2701E2CA00A86EA2 /* TempModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A5C2701E2CA00A86EA2 /* TempModel.swift */; };
+		BD596A5F2701E2DC00A86EA2 /* TempService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A5E2701E2DC00A86EA2 /* TempService.swift */; };
+		BD596A622701E3C400A86EA2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A612701E3C400A86EA2 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		BD596A482701DF1B00A86EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD596A4B2701DF1B00A86EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD596A4D2701DF1B00A86EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD596A5C2701E2CA00A86EA2 /* TempModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempModel.swift; sourceTree = "<group>"; };
+		BD596A5E2701E2DC00A86EA2 /* TempService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempService.swift; sourceTree = "<group>"; };
+		BD596A612701E3C400A86EA2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,74 @@
 		BD596A3E2701DF1800A86EA2 /* GitHubAPI-Sample */ = {
 			isa = PBXGroup;
 			children = (
-				BD596A3F2701DF1800A86EA2 /* AppDelegate.swift */,
-				BD596A412701DF1800A86EA2 /* SceneDelegate.swift */,
-				BD596A432701DF1800A86EA2 /* ViewController.swift */,
-				BD596A452701DF1800A86EA2 /* Main.storyboard */,
-				BD596A482701DF1B00A86EA2 /* Assets.xcassets */,
-				BD596A4A2701DF1B00A86EA2 /* LaunchScreen.storyboard */,
-				BD596A4D2701DF1B00A86EA2 /* Info.plist */,
+				BD596A542701E1D100A86EA2 /* App */,
+				BD596A582701E23200A86EA2 /* Models */,
+				BD596A572701E21800A86EA2 /* Services */,
+				BD596A532701E1B500A86EA2 /* Supporting Files */,
+				BD596A592701E24900A86EA2 /* Utils */,
+				BD596A552701E20900A86EA2 /* Views */,
 			);
 			path = "GitHubAPI-Sample";
+			sourceTree = "<group>";
+		};
+		BD596A532701E1B500A86EA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD596A482701DF1B00A86EA2 /* Assets.xcassets */,
+				BD596A4D2701DF1B00A86EA2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD596A542701E1D100A86EA2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BD596A3F2701DF1800A86EA2 /* AppDelegate.swift */,
+				BD596A412701DF1800A86EA2 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BD596A552701E20900A86EA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD596A452701DF1800A86EA2 /* Main.storyboard */,
+				BD596A4A2701DF1B00A86EA2 /* LaunchScreen.storyboard */,
+				BD596A432701DF1800A86EA2 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD596A572701E21800A86EA2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BD596A5E2701E2DC00A86EA2 /* TempService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BD596A582701E23200A86EA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD596A5C2701E2CA00A86EA2 /* TempModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD596A592701E24900A86EA2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD596A602701E2FD00A86EA2 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BD596A602701E2FD00A86EA2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD596A612701E3C400A86EA2 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD596A622701E3C400A86EA2 /* UIView+Extensions.swift in Sources */,
 				BD596A442701DF1800A86EA2 /* ViewController.swift in Sources */,
+				BD596A5D2701E2CA00A86EA2 /* TempModel.swift in Sources */,
+				BD596A5F2701E2DC00A86EA2 /* TempService.swift in Sources */,
 				BD596A402701DF1800A86EA2 /* AppDelegate.swift in Sources */,
 				BD596A422701DF1800A86EA2 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W895YM7ZMH;
-				INFOPLIST_FILE = "GitHubAPI-Sample/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GitHubAPI-Sample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W895YM7ZMH;
-				INFOPLIST_FILE = "GitHubAPI-Sample/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GitHubAPI-Sample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
