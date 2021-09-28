@@ -18,6 +18,7 @@
 		BD596A622701E3C400A86EA2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A612701E3C400A86EA2 /* UIView+Extensions.swift */; };
 		BD596A662701EE9C00A86EA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD596A652701EE9C00A86EA2 /* GoogleService-Info.plist */; };
 		BDE429752702C55E00B1567F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE429742702C55E00B1567F /* LoginManager.swift */; };
+		BDE429772702C8EB00B1567F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE429762702C8EB00B1567F /* UserManager.swift */; };
 		F11CA00291A7381E47E05AC8 /* Pods_GitHubAPI_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533EC38EDDBC5B9FD9E67372 /* Pods_GitHubAPI_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		BD596A612701E3C400A86EA2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BD596A652701EE9C00A86EA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDE429742702C55E00B1567F /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		BDE429762702C8EB00B1567F /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		F9BDAE5DAD72818AEC81F8EC /* Pods-GitHubAPI-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubAPI-Sample.release.xcconfig"; path = "Target Support Files/Pods-GitHubAPI-Sample/Pods-GitHubAPI-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 			children = (
 				BD596A5E2701E2DC00A86EA2 /* TempService.swift */,
 				BDE429742702C55E00B1567F /* LoginManager.swift */,
+				BDE429762702C8EB00B1567F /* UserManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				BD596A5D2701E2CA00A86EA2 /* TempModel.swift in Sources */,
 				BD596A5F2701E2DC00A86EA2 /* TempService.swift in Sources */,
 				BD596A402701DF1800A86EA2 /* AppDelegate.swift in Sources */,
+				BDE429772702C8EB00B1567F /* UserManager.swift in Sources */,
 				BD596A422701DF1800A86EA2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

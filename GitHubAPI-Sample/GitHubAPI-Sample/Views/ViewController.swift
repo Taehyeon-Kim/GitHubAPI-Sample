@@ -6,6 +6,9 @@
 //
 
 import UIKit
+
+import Alamofire
+import KeychainSwift
 import FirebaseAuth
 
 class ViewController: UIViewController {
@@ -18,5 +21,9 @@ class ViewController: UIViewController {
     
     @IBAction func tapGitHubLoginButton() {
         LoginManager.shared.performOAuthLoginFlow(for: provider)
+    }
+    
+    @IBAction func tapGetUserButton() {
+        UserManager.shared.getUser()
     }
 }
