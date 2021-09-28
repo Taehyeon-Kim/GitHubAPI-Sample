@@ -13,4 +13,7 @@ target 'GitHubAPI-Sample' do
   # Firebase
   pod 'Firebase/Auth'
   pod 'Firebase/Analytics'
+
+  # Privacy
+  pod 'KeychainSwift'
 end
