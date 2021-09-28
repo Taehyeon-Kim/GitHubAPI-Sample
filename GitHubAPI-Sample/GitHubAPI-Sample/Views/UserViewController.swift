@@ -19,22 +19,26 @@ class UserViewController: UIViewController {
         $0.axis = .vertical
         $0.spacing = 10
         $0.addArrangedSubviews(profileImageView, nameLabel, bioLabel)
+        profileImageView.snp.makeConstraints {
+            $0.height.equalTo(128)
+        }
     }
 
-    lazy var profileImageView = UIImageView().then {
+    var profileImageView = UIImageView().then {
         $0.image = UIImage(systemName: "person.circle.fill")
         $0.contentMode = .scaleAspectFit
-        $0.clipsToBounds = true
     }
 
     var nameLabel = UILabel().then {
         $0.text = "ENTER YOUR NAME"
+        $0.textColor = .darkGray
         $0.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         $0.textAlignment = .center
     }
 
     var bioLabel = UILabel().then {
         $0.text = "ENTER YOUR BIO"
+        $0.textColor = .darkGray
         $0.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         $0.textAlignment = .center
         $0.numberOfLines = 0
@@ -90,6 +94,7 @@ class UserViewController: UIViewController {
         
         configureNavigationBar()
         setupLayout()
+        getUser()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -109,20 +114,22 @@ class UserViewController: UIViewController {
     private func setupLayout() {
         view.addSubviews(profileStackView)
         profileStackView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(topHeight)
+            $0.top.equalToSuperview().offset(topHeight + 20)
             $0.left.right.equalToSuperview()
-            $0.height.equalTo(150)
         }
     }
-}
-
-extension UINavigationBar
-{
-    var largeTitleHeight: CGFloat {
-        let maxSize = self.subviews
-            .filter { $0.frame.origin.y > 0 }
-            .max { $0.frame.origin.y < $1.frame.origin.y }
-            .map { $0.frame.size }
-        return maxSize?.height ?? 0
+    
+    private func getUser() {
+        UserManager.shared.getUser { data in
+            self.setupUserData(userData: data)
+        }
+    }
+    
+    private func setupUserData(userData: UserModel) {
+        guard let url = URL(string: userData.avatarURL) else { return }
+        let data = try! Data(contentsOf: url)
+        profileImageView.image = UIImage(data: data)
+        nameLabel.text = userData.name
+        bioLabel.text = userData.bio
     }
 }
