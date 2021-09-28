@@ -20,6 +20,8 @@
 		BDE429752702C55E00B1567F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE429742702C55E00B1567F /* LoginManager.swift */; };
 		BDE429772702C8EB00B1567F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE429762702C8EB00B1567F /* UserManager.swift */; };
 		BDE429792703081100B1567F /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE429782703081100B1567F /* UINavigationController+Extensions.swift */; };
+		BDE4297B27030AD900B1567F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4297A27030AD900B1567F /* UserViewController.swift */; };
+		BDE4297D27030AF400B1567F /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4297C27030AF400B1567F /* RepoViewController.swift */; };
 		F11CA00291A7381E47E05AC8 /* Pods_GitHubAPI_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533EC38EDDBC5B9FD9E67372 /* Pods_GitHubAPI_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		BDE429742702C55E00B1567F /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		BDE429762702C8EB00B1567F /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		BDE429782703081100B1567F /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		BDE4297A27030AD900B1567F /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		BDE4297C27030AF400B1567F /* RepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewController.swift; sourceTree = "<group>"; };
 		F9BDAE5DAD72818AEC81F8EC /* Pods-GitHubAPI-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubAPI-Sample.release.xcconfig"; path = "Target Support Files/Pods-GitHubAPI-Sample/Pods-GitHubAPI-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +124,8 @@
 				BD596A452701DF1800A86EA2 /* Main.storyboard */,
 				BD596A4A2701DF1B00A86EA2 /* LaunchScreen.storyboard */,
 				BD596A432701DF1800A86EA2 /* ViewController.swift */,
+				BDE4297C27030AF400B1567F /* RepoViewController.swift */,
+				BDE4297A27030AD900B1567F /* UserViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE4297D27030AF400B1567F /* RepoViewController.swift in Sources */,
 				BD596A622701E3C400A86EA2 /* UIView+Extensions.swift in Sources */,
+				BDE4297B27030AD900B1567F /* UserViewController.swift in Sources */,
 				BD596A442701DF1800A86EA2 /* ViewController.swift in Sources */,
 				BDE429752702C55E00B1567F /* LoginManager.swift in Sources */,
 				BD596A5D2701E2CA00A86EA2 /* TempModel.swift in Sources */,
