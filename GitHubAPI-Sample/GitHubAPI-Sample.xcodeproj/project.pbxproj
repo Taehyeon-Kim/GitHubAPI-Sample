@@ -22,6 +22,7 @@
 		BDE4297B27030AD900B1567F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4297A27030AD900B1567F /* UserViewController.swift */; };
 		BDE4297D27030AF400B1567F /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4297C27030AF400B1567F /* RepoViewController.swift */; };
 		BDE42981270313F500B1567F /* UITabBarController+UITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42980270313F500B1567F /* UITabBarController+UITabBarControllerDelegate.swift */; };
+		BDE4298327031AAF00B1567F /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4298227031AAF00B1567F /* UIStackView+Extensions.swift */; };
 		F11CA00291A7381E47E05AC8 /* Pods_GitHubAPI_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533EC38EDDBC5B9FD9E67372 /* Pods_GitHubAPI_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		BDE4297A27030AD900B1567F /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		BDE4297C27030AF400B1567F /* RepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewController.swift; sourceTree = "<group>"; };
 		BDE42980270313F500B1567F /* UITabBarController+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
+		BDE4298227031AAF00B1567F /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		F9BDAE5DAD72818AEC81F8EC /* Pods-GitHubAPI-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubAPI-Sample.release.xcconfig"; path = "Target Support Files/Pods-GitHubAPI-Sample/Pods-GitHubAPI-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 				BD596A612701E3C400A86EA2 /* UIView+Extensions.swift */,
 				BDE429782703081100B1567F /* UINavigationController+Extensions.swift */,
 				BDE42980270313F500B1567F /* UITabBarController+UITabBarControllerDelegate.swift */,
+				BDE4298227031AAF00B1567F /* UIStackView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				BDE4297D27030AF400B1567F /* RepoViewController.swift in Sources */,
 				BD596A622701E3C400A86EA2 /* UIView+Extensions.swift in Sources */,
+				BDE4298327031AAF00B1567F /* UIStackView+Extensions.swift in Sources */,
 				BDE4297B27030AD900B1567F /* UserViewController.swift in Sources */,
 				BD596A442701DF1800A86EA2 /* ViewController.swift in Sources */,
 				BDE42981270313F500B1567F /* UITabBarController+UITabBarControllerDelegate.swift in Sources */,
