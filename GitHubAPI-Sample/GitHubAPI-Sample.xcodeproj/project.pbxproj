@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		BD596A402701DF1800A86EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A3F2701DF1800A86EA2 /* AppDelegate.swift */; };
 		BD596A422701DF1800A86EA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A412701DF1800A86EA2 /* SceneDelegate.swift */; };
-		BD596A442701DF1800A86EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A432701DF1800A86EA2 /* ViewController.swift */; };
 		BD596A492701DF1B00A86EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD596A482701DF1B00A86EA2 /* Assets.xcassets */; };
 		BD596A4C2701DF1B00A86EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD596A4A2701DF1B00A86EA2 /* LaunchScreen.storyboard */; };
-		BD596A5D2701E2CA00A86EA2 /* TempModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A5C2701E2CA00A86EA2 /* TempModel.swift */; };
-		BD596A5F2701E2DC00A86EA2 /* TempService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A5E2701E2DC00A86EA2 /* TempService.swift */; };
 		BD596A622701E3C400A86EA2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD596A612701E3C400A86EA2 /* UIView+Extensions.swift */; };
 		BD596A662701EE9C00A86EA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD596A652701EE9C00A86EA2 /* GoogleService-Info.plist */; };
 		BDE429752702C55E00B1567F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE429742702C55E00B1567F /* LoginManager.swift */; };
@@ -23,6 +20,7 @@
 		BDE4297D27030AF400B1567F /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4297C27030AF400B1567F /* RepoViewController.swift */; };
 		BDE42981270313F500B1567F /* UITabBarController+UITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE42980270313F500B1567F /* UITabBarController+UITabBarControllerDelegate.swift */; };
 		BDE4298327031AAF00B1567F /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4298227031AAF00B1567F /* UIStackView+Extensions.swift */; };
+		BDE4298527033EFF00B1567F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE4298427033EFF00B1567F /* UserModel.swift */; };
 		F11CA00291A7381E47E05AC8 /* Pods_GitHubAPI_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533EC38EDDBC5B9FD9E67372 /* Pods_GitHubAPI_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,12 +30,9 @@
 		BD596A3C2701DF1800A86EA2 /* GitHubAPI-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHubAPI-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD596A3F2701DF1800A86EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD596A412701DF1800A86EA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD596A432701DF1800A86EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD596A482701DF1B00A86EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD596A4B2701DF1B00A86EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD596A4D2701DF1B00A86EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD596A5C2701E2CA00A86EA2 /* TempModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempModel.swift; sourceTree = "<group>"; };
-		BD596A5E2701E2DC00A86EA2 /* TempService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempService.swift; sourceTree = "<group>"; };
 		BD596A612701E3C400A86EA2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BD596A652701EE9C00A86EA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDE429742702C55E00B1567F /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
@@ -47,6 +42,7 @@
 		BDE4297C27030AF400B1567F /* RepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewController.swift; sourceTree = "<group>"; };
 		BDE42980270313F500B1567F /* UITabBarController+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
 		BDE4298227031AAF00B1567F /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		BDE4298427033EFF00B1567F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F9BDAE5DAD72818AEC81F8EC /* Pods-GitHubAPI-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubAPI-Sample.release.xcconfig"; path = "Target Support Files/Pods-GitHubAPI-Sample/Pods-GitHubAPI-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				BD596A4A2701DF1B00A86EA2 /* LaunchScreen.storyboard */,
-				BD596A432701DF1800A86EA2 /* ViewController.swift */,
 				BDE4297C27030AF400B1567F /* RepoViewController.swift */,
 				BDE4297A27030AD900B1567F /* UserViewController.swift */,
 			);
@@ -134,7 +129,6 @@
 		BD596A572701E21800A86EA2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				BD596A5E2701E2DC00A86EA2 /* TempService.swift */,
 				BDE429742702C55E00B1567F /* LoginManager.swift */,
 				BDE429762702C8EB00B1567F /* UserManager.swift */,
 			);
@@ -144,7 +138,7 @@
 		BD596A582701E23200A86EA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BD596A5C2701E2CA00A86EA2 /* TempModel.swift */,
+				BDE4298427033EFF00B1567F /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,11 +289,9 @@
 				BD596A622701E3C400A86EA2 /* UIView+Extensions.swift in Sources */,
 				BDE4298327031AAF00B1567F /* UIStackView+Extensions.swift in Sources */,
 				BDE4297B27030AD900B1567F /* UserViewController.swift in Sources */,
-				BD596A442701DF1800A86EA2 /* ViewController.swift in Sources */,
 				BDE42981270313F500B1567F /* UITabBarController+UITabBarControllerDelegate.swift in Sources */,
 				BDE429752702C55E00B1567F /* LoginManager.swift in Sources */,
-				BD596A5D2701E2CA00A86EA2 /* TempModel.swift in Sources */,
-				BD596A5F2701E2DC00A86EA2 /* TempService.swift in Sources */,
+				BDE4298527033EFF00B1567F /* UserModel.swift in Sources */,
 				BD596A402701DF1800A86EA2 /* AppDelegate.swift in Sources */,
 				BDE429772702C8EB00B1567F /* UserManager.swift in Sources */,
 				BDE429792703081100B1567F /* UINavigationController+Extensions.swift in Sources */,
