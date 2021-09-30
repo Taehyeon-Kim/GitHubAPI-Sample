@@ -16,13 +16,17 @@ class UserManager {
     /// singleton
     static let shared = UserManager()
     
+    private let accessToken = KeychainSwift().get("accessToken") ?? ""
+    private lazy var headers: HTTPHeaders = [
+        "Accept": "application/vnd.github.v3+json",
+        "Authorization": "token \(accessToken)"
+    ]
+    
     private init() {}
     
     public func getUser(completion: @escaping ((UserModel) -> Void)) {
         let url = "https://api.github.com/user"
-        let accessToken = KeychainSwift().get("accessToken") ?? ""
-        let headers: HTTPHeaders = ["Accept": "application/vnd.github.v3+json",
-                                    "Authorization": "token \(accessToken)"]
+
         
         AF.request(url, method: .get, parameters: [:], headers: headers)
             .responseDecodable(of: UserModel.self, completionHandler: { response in
@@ -43,5 +47,20 @@ class UserManager {
 //                print("")
 //            }
 //        })
+    }
+    
+    public func getRepo(completion: @escaping (([RepoModel]) -> Void)) {
+        let url = "https://api.github.com/user/repos"
+        
+        AF.request(url, method: .get, parameters: [:], headers: headers)
+            .responseDecodable(of: [RepoModel].self) { response in
+                switch response.result {
+                case .success(let data):
+//                    completion(data)
+                    print(data)
+                case .failure(let error):
+                    print(error)
+                }
+            }
     }
 }
